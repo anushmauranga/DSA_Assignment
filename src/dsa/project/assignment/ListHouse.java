@@ -34,4 +34,34 @@ public class ListHouse implements Listable
      this.squareFeet = squareFeet;
      this.bedRooms = bedRooms;
     }
+     
+     //Declare Set Methods
+     public void setlotNumber(int lotNumber){this.lotNumber = lotNumber;}
+     public void setfirstName(String firstName){this.firstName = firstName;}
+     public void setlastName(String lastName){this.lastName = lastName;}
+     public void setPrice(Double price){this.price = price;}
+     public void setsquareFeet(int squareFeet){this.squareFeet = squareFeet;}
+     public void setbedRooms(int bedRooms){this.bedRooms = bedRooms;}
+     
+     //Declare Get Methods
+     public int getlotNumber(){return this.lotNumber; }
+     public String getfirstName(){return this.firstName;}
+     public String getlastName(){return this.lastName;}
+     public Double getPrice(){return this.price;}
+     public int getsquareFeet(){return this.squareFeet;}
+     public int getbedRooms(){return this.bedRooms;}
+
+     //Get new instance from ListHouse
+    @Override
+    public Listable copy() {
+        return new ListHouse(this.lotNumber, this.firstName,this.lastName, this.price, this.squareFeet, this.bedRooms);
+    }
+
+    
+    @Override
+    public int compareTo(Listable listable) {
+       return (this.lotNumber - ((ListHouse)listable).lotNumber);
+    }
+     
+     
 }
