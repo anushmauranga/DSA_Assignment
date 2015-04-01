@@ -4,10 +4,9 @@
  */
 package dsa.project.assignment;
 
-/**
- *
- * @author sumeera
- */
+
 public interface Listable {
+    public Listable copy();
+    public int compareTo(Listable listable);
     
 }

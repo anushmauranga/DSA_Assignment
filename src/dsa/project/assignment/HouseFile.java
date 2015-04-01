@@ -4,10 +4,7 @@
  */
 package dsa.project.assignment;
 
-/**
- *
- * @author sumeera
- */
+
 public class HouseFile {
     
 }
