@@ -7,4 +7,8 @@ package dsa.project.assignment;
 
 public class HouseFile {
     
+    private static BufferedWriter bWriter;
+    private static BufferedReader bReader;
+    
+    
 }
